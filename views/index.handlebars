@@ -1,0 +1,47 @@
+<h2 class="modal-header">Dashboard</h2>
+<p>Welcome to your dashboard</p>
+
+<div class="row">
+    <div class="col-md-6">
+        {{#if fname}}
+            <h4 class="modal-header">First Name: {{fname}}</h4>
+        {{/if}}
+        {{#if lname}}
+            <h4 class="modal-header">Last Name: {{lname}}</h4>
+        {{/if}}
+        {{#if email}}
+            <h4 class="modal-header">Email: {{email}}</h4>
+        {{/if}}
+    </div>
+    <div class="col-md-6">
+        {{#if phone}}
+            <h4 class="modal-header">Phone: {{phone}}</h4>
+        {{/if}}
+        {{#if balance}}
+            <h4 class="modal-header">Balance: {{balance}}</h4>
+        {{/if}}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <p>Deposit Funds to eWallet Account</p>
+
+        <form method="post" action="/deposite">
+            <div class="form-group">
+                <label>Enter Deposite Sum:</label>
+                <input type="text" class="form-control" name="sum" placeholder="Deposite Amount">
+            </div>
+            <div class="form-group">
+                <label>Enter Currency</label>
+                <input type="text" class="form-control" name="currency" placeholder="Three-letter ISO 4217 code for the currency">
+                <input type="hidden" name="phone" value="{{phone}}">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+

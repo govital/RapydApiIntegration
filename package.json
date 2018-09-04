@@ -1,0 +1,29 @@
+{
+  "name": "rapydhometask",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "config.json": "0.0.4",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "debug": "~2.6.9",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "phone": "^2.1.0",
+    "pug": "2.0.0-beta11",
+    "request": "^2.88.0"
+  }
+}
